@@ -12,5 +12,5 @@ class BookViewSet(ModelViewSet):
     filter_backends = [DjangoFilterBackend, OrderingFilter, SearchFilter]
     filterset_fields = ['price']
     ordering_fields = ['price', 'name', 'author']
-    ordering = ['-price']
+    # ordering = ['-price']
     search_fields = ['name', 'price', 'author']
